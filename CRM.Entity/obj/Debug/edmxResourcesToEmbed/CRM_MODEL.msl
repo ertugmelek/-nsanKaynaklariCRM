@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CRM1ModelStoreContainer" CdmEntityContainer="CRM1Entities">
+    <EntitySetMapping Name="Adres">
+      <EntityTypeMapping TypeName="CRM1Model.Adre">
+        <MappingFragment StoreEntitySet="Adres">
+          <ScalarProperty Name="AdresID" ColumnName="AdresID" />
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Ilce" ColumnName="Ilce" />
+          <ScalarProperty Name="Il" ColumnName="Il" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BireyselUnvans">
+      <EntityTypeMapping TypeName="CRM1Model.BireyselUnvan">
+        <MappingFragment StoreEntitySet="BireyselUnvan">
+          <ScalarProperty Name="UnvanID" ColumnName="UnvanID" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Emails">
+      <EntityTypeMapping TypeName="CRM1Model.Email">
+        <MappingFragment StoreEntitySet="Email">
+          <ScalarProperty Name="MailID" ColumnName="MailID" />
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="EmailAdres" ColumnName="EmailAdres" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FaaliyetAlanis">
+      <EntityTypeMapping TypeName="CRM1Model.FaaliyetAlani">
+        <MappingFragment StoreEntitySet="FaaliyetAlani">
+          <ScalarProperty Name="FaaliyetAlanID" ColumnName="FaaliyetAlanID" />
+          <ScalarProperty Name="FaaliyetAlani1" ColumnName="FaaliyetAlani" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Musteris">
+      <EntityTypeMapping TypeName="CRM1Model.Musteri">
+        <MappingFragment StoreEntitySet="Musteri">
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="TipID" ColumnName="TipID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MusteriBireysels">
+      <EntityTypeMapping TypeName="CRM1Model.MusteriBireysel">
+        <MappingFragment StoreEntitySet="MusteriBireysel">
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MusteriFirmas">
+      <EntityTypeMapping TypeName="CRM1Model.MusteriFirma">
+        <MappingFragment StoreEntitySet="MusteriFirma">
+          <ScalarProperty Name="Mersis" ColumnName="Mersis" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MusteriTurus">
+      <EntityTypeMapping TypeName="CRM1Model.MusteriTuru">
+        <MappingFragment StoreEntitySet="MusteriTuru">
+          <ScalarProperty Name="TipID" ColumnName="TipID" />
+          <ScalarProperty Name="TipAdi" ColumnName="TipAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="CRM1Model.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Telefons">
+      <EntityTypeMapping TypeName="CRM1Model.Telefon">
+        <MappingFragment StoreEntitySet="Telefon">
+          <ScalarProperty Name="TelefonID" ColumnName="TelefonID" />
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="Telefon1" ColumnName="Telefon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="BireyUnvan" TypeName="CRM1Model.BireyUnvan" StoreEntitySet="BireyUnvan">
+      <EndProperty Name="BireyselUnvan">
+        <ScalarProperty Name="UnvanID" ColumnName="UnvanID" />
+      </EndProperty>
+      <EndProperty Name="MusteriBireysel">
+        <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FirmaFaaliyet" TypeName="CRM1Model.FirmaFaaliyet" StoreEntitySet="FirmaFaaliyet">
+      <EndProperty Name="FaaliyetAlani">
+        <ScalarProperty Name="FaaliyetAlanID" ColumnName="FaaliyetAlaniID" />
+      </EndProperty>
+      <EndProperty Name="MusteriFirma">
+        <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="CRM1Model.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="CRM1Model.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="CRM1Model.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="CRM1Model.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CRM1Model.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="CRM1Model.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CRM1Model.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="CRM1Model.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="CRM1Model.Store.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>

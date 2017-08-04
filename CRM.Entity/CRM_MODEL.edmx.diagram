@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="27887f3aab774b23a1dcafb04a1e95ae" Name="Diagram1">
+        <EntityTypeShape EntityType="CRM1Model.Adre" Width="1.5" PointX="5.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM1Model.BireyselUnvan" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM1Model.Email" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM1Model.FaaliyetAlani" Width="1.5" PointX="6" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM1Model.Musteri" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM1Model.MusteriBireysel" Width="1.5" PointX="5.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM1Model.MusteriFirma" Width="1.5" PointX="8.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM1Model.MusteriTuru" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM1Model.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM1Model.Telefon" Width="1.5" PointX="5.25" PointY="15.75" IsExpanded="true" />
+        <AssociationConnector Association="CRM1Model.FK_Adres_Musteri" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM1Model.FK_Email_Musteri" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM1Model.FK_Musteri_MusteriTuru" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM1Model.FK_MusteriBireysel_Musteri" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM1Model.FK_MusteriFirma_Musteri" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM1Model.FK_Telefon_Musteri" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM1Model.BireyUnvan" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM1Model.FirmaFaaliyet" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

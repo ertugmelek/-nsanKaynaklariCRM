@@ -1,0 +1,11 @@
+c:\users\nbuy_ogrenci\documents\visual studio 2013\Projects\CRM\CRM\bin\CRM.dll.config
+c:\users\nbuy_ogrenci\documents\visual studio 2013\Projects\CRM\CRM\bin\CRM.dll
+c:\users\nbuy_ogrenci\documents\visual studio 2013\Projects\CRM\CRM\bin\CRM.pdb
+c:\users\nbuy_ogrenci\documents\visual studio 2013\Projects\CRM\CRM\obj\Debug\CRM.UI.csprojResolveAssemblyReference.cache
+c:\users\nbuy_ogrenci\documents\visual studio 2013\Projects\CRM\CRM\obj\Debug\CRM.dll
+c:\users\nbuy_ogrenci\documents\visual studio 2013\Projects\CRM\CRM\obj\Debug\CRM.pdb
+C:\Users\CASPER\Desktop\crm\CRM\bin\CRM.dll
+C:\Users\CASPER\Desktop\crm\CRM\bin\CRM.pdb
+C:\Users\CASPER\Desktop\crm\CRM\obj\Debug\CRM.UI.csprojResolveAssemblyReference.cache
+C:\Users\CASPER\Desktop\crm\CRM\obj\Debug\CRM.dll
+C:\Users\CASPER\Desktop\crm\CRM\obj\Debug\CRM.pdb

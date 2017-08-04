@@ -1,0 +1,30 @@
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM.Entity\bin\Debug\CRM.Entity.dll.config
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM.Entity\bin\Debug\CRM.Entity.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM.Entity\bin\Debug\CRM.Entity.pdb
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM.Entity\bin\Debug\EntityFramework.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM.Entity\bin\Debug\EntityFramework.xml
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM.Entity\obj\Debug\CRM.Entity.csprojResolveAssemblyReference.cache
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM.Entity\obj\Debug\CRM.Entity.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM.Entity\obj\Debug\CRM.Entity.pdb
+C:\Users\Dilan\Desktop\CRM\CRM.Entity\bin\Debug\CRM.Entity.dll.config
+C:\Users\Dilan\Desktop\CRM\CRM.Entity\bin\Debug\CRM.Entity.dll
+C:\Users\Dilan\Desktop\CRM\CRM.Entity\bin\Debug\CRM.Entity.pdb
+C:\Users\Dilan\Desktop\CRM\CRM.Entity\bin\Debug\EntityFramework.dll
+C:\Users\Dilan\Desktop\CRM\CRM.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dilan\Desktop\CRM\CRM.Entity\bin\Debug\EntityFramework.xml
+C:\Users\Dilan\Desktop\CRM\CRM.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dilan\Desktop\CRM\CRM.Entity\obj\Debug\CRM.Entity.csprojResolveAssemblyReference.cache
+C:\Users\Dilan\Desktop\CRM\CRM.Entity\obj\Debug\CRM.Entity.dll
+C:\Users\Dilan\Desktop\CRM\CRM.Entity\obj\Debug\CRM.Entity.pdb
+C:\Users\nbuy_ogrenci\Desktop\CRM\CRM.Entity\bin\Debug\CRM.Entity.dll.config
+C:\Users\nbuy_ogrenci\Desktop\CRM\CRM.Entity\bin\Debug\CRM.Entity.dll
+C:\Users\nbuy_ogrenci\Desktop\CRM\CRM.Entity\bin\Debug\CRM.Entity.pdb
+C:\Users\nbuy_ogrenci\Desktop\CRM\CRM.Entity\bin\Debug\EntityFramework.dll
+C:\Users\nbuy_ogrenci\Desktop\CRM\CRM.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nbuy_ogrenci\Desktop\CRM\CRM.Entity\bin\Debug\EntityFramework.xml
+C:\Users\nbuy_ogrenci\Desktop\CRM\CRM.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nbuy_ogrenci\Desktop\CRM\CRM.Entity\obj\Debug\CRM.Entity.csprojResolveAssemblyReference.cache
+C:\Users\nbuy_ogrenci\Desktop\CRM\CRM.Entity\obj\Debug\CRM.Entity.dll
+C:\Users\nbuy_ogrenci\Desktop\CRM\CRM.Entity\obj\Debug\CRM.Entity.pdb

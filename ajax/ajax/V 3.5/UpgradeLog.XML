@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="TimePicker">
+</Property><Property Name="Solution File" Value="C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\TimePicker.sln">
+</Property><Property Name="Date" Value="22 Mayıs 2013 Çarşamba">
+</Property><Property Name="Time" Value="20:22">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="TimePicker.sln" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\TimePicker.sln">
+</Event><Event ErrorLevel="0" Project="Ajaxified" Source="Ajaxified\Ajaxified.csproj" Description="Project file successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\Ajaxified\Ajaxified.csproj">
+</Event><Event ErrorLevel="0" Project="Ajaxified" Source="Ajaxified\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\Ajaxified\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Ajaxified" Source="Ajaxified\TimePicker.cs" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\Ajaxified\TimePicker.cs">
+</Event><Event ErrorLevel="0" Project="Ajaxified" Source="Ajaxified\images\close.gif" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\Ajaxified\images\close.gif">
+</Event><Event ErrorLevel="0" Project="Ajaxified" Source="Ajaxified\images\timepicker_off.gif" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\Ajaxified\images\timepicker_off.gif">
+</Event><Event ErrorLevel="0" Project="Ajaxified" Source="Ajaxified\images\timepicker_on.gif" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\Ajaxified\images\timepicker_on.gif">
+</Event><Event ErrorLevel="0" Project="Ajaxified" Source="Ajaxified\TimePicker.css" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\Ajaxified\TimePicker.css">
+</Event><Event ErrorLevel="0" Project="Ajaxified" Source="Ajaxified\TimePicker.js" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\Ajaxified\TimePicker.js">
+</Event><Event ErrorLevel="0" Project="Ajaxified" Source="Ajaxified\Ajaxified.TimePicker.ico" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\Ajaxified\Ajaxified.TimePicker.ico">
+</Event><Event ErrorLevel="0" Project="Ajaxified" Source="Ajaxified\Ajaxified.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="Ajaxified" Source="Ajaxified\Ajaxified.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="TestApp" Source="TestApp\TestApp.csproj" Description="Project file successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\TestApp\TestApp.csproj">
+</Event><Event ErrorLevel="0" Project="TestApp" Source="TestApp\Default.aspx.cs" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\TestApp\Default.aspx.cs">
+</Event><Event ErrorLevel="0" Project="TestApp" Source="TestApp\Default.aspx.designer.cs" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\TestApp\Default.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="TestApp" Source="TestApp\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\TestApp\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TestApp" Source="TestApp\Default.aspx" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\TestApp\Default.aspx">
+</Event><Event ErrorLevel="0" Project="TestApp" Source="TestApp\header.jpg" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\TestApp\header.jpg">
+</Event><Event ErrorLevel="0" Project="TestApp" Source="TestApp\SiteStyle.css" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\TestApp\SiteStyle.css">
+</Event><Event ErrorLevel="0" Project="TestApp" Source="TestApp\Web.config" Description="File successfully backed up as C:\Users\Ozdecan\Desktop\bitirme proje\bitirme proje\Tez\ajax\V 3.5\Backup\TestApp\Web.config">
+</Event><Event ErrorLevel="0" Project="TestApp" Source="TestApp\TestApp.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TestApp" Source="TestApp\TestApp.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="TimePicker.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="TimePicker.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TestApp" Source="TestApp\TestApp.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

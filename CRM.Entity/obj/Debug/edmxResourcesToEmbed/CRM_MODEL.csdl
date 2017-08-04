@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CRM1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Adre">
+    <Key>
+      <PropertyRef Name="AdresID" />
+    </Key>
+    <Property Name="AdresID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MusteriID" Type="Int32" Nullable="false" />
+    <Property Name="Adress" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Ilce" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Il" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Musteri" Relationship="Self.FK_Adres_Musteri" FromRole="Adres" ToRole="Musteri" />
+  </EntityType>
+  <EntityType Name="BireyselUnvan">
+    <Key>
+      <PropertyRef Name="UnvanID" />
+    </Key>
+    <Property Name="UnvanID" Type="Int32" Nullable="false" />
+    <Property Name="Unvan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="MusteriBireysels" Relationship="Self.BireyUnvan" FromRole="BireyselUnvan" ToRole="MusteriBireysel" />
+  </EntityType>
+  <EntityType Name="Email">
+    <Key>
+      <PropertyRef Name="MailID" />
+    </Key>
+    <Property Name="MailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MusteriID" Type="Int32" Nullable="false" />
+    <Property Name="EmailAdres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Musteri" Relationship="Self.FK_Email_Musteri" FromRole="Email" ToRole="Musteri" />
+  </EntityType>
+  <EntityType Name="FaaliyetAlani">
+    <Key>
+      <PropertyRef Name="FaaliyetAlanID" />
+    </Key>
+    <Property Name="FaaliyetAlanID" Type="Int32" Nullable="false" />
+    <Property Name="FaaliyetAlani1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="MusteriFirmas" Relationship="Self.FirmaFaaliyet" FromRole="FaaliyetAlani" ToRole="MusteriFirma" />
+  </EntityType>
+  <EntityType Name="Musteri">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="MusteriID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TipID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Adres" Relationship="Self.FK_Adres_Musteri" FromRole="Musteri" ToRole="Adres" />
+    <NavigationProperty Name="Emails" Relationship="Self.FK_Email_Musteri" FromRole="Musteri" ToRole="Email" />
+    <NavigationProperty Name="MusteriTuru" Relationship="Self.FK_Musteri_MusteriTuru" FromRole="Musteri" ToRole="MusteriTuru" />
+    <NavigationProperty Name="MusteriBireysel" Relationship="Self.FK_MusteriBireysel_Musteri" FromRole="Musteri" ToRole="MusteriBireysel" />
+    <NavigationProperty Name="MusteriFirma" Relationship="Self.FK_MusteriFirma_Musteri" FromRole="Musteri" ToRole="MusteriFirma" />
+    <NavigationProperty Name="Telefons" Relationship="Self.FK_Telefon_Musteri" FromRole="Musteri" ToRole="Telefon" />
+  </EntityType>
+  <EntityType Name="MusteriBireysel">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="Ad" Type="String" MaxLength="25" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TC" Type="String" MaxLength="11" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="DogumTarihi" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="MusteriID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Musteri" Relationship="Self.FK_MusteriBireysel_Musteri" FromRole="MusteriBireysel" ToRole="Musteri" />
+    <NavigationProperty Name="BireyselUnvans" Relationship="Self.BireyUnvan" FromRole="MusteriBireysel" ToRole="BireyselUnvan" />
+  </EntityType>
+  <EntityType Name="MusteriFirma">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="Mersis" Type="String" MaxLength="16" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Unvan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MusteriID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Musteri" Relationship="Self.FK_MusteriFirma_Musteri" FromRole="MusteriFirma" ToRole="Musteri" />
+    <NavigationProperty Name="FaaliyetAlanis" Relationship="Self.FirmaFaaliyet" FromRole="MusteriFirma" ToRole="FaaliyetAlani" />
+  </EntityType>
+  <EntityType Name="MusteriTuru">
+    <Key>
+      <PropertyRef Name="TipID" />
+    </Key>
+    <Property Name="TipID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TipAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Musteris" Relationship="Self.FK_Musteri_MusteriTuru" FromRole="MusteriTuru" ToRole="Musteri" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Telefon">
+    <Key>
+      <PropertyRef Name="TelefonID" />
+    </Key>
+    <Property Name="TelefonID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MusteriID" Type="Int32" Nullable="false" />
+    <Property Name="Telefon1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Musteri" Relationship="Self.FK_Telefon_Musteri" FromRole="Telefon" ToRole="Musteri" />
+  </EntityType>
+  <Association Name="FK_Adres_Musteri">
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="1" />
+    <End Role="Adres" Type="Self.Adre" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="Adres">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Email_Musteri">
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="1" />
+    <End Role="Email" Type="Self.Email" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="Email">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Musteri_MusteriTuru">
+    <End Role="MusteriTuru" Type="Self.MusteriTuru" Multiplicity="1" />
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MusteriTuru">
+        <PropertyRef Name="TipID" />
+      </Principal>
+      <Dependent Role="Musteri">
+        <PropertyRef Name="TipID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MusteriBireysel_Musteri">
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="1" />
+    <End Role="MusteriBireysel" Type="Self.MusteriBireysel" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Musteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="MusteriBireysel">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MusteriFirma_Musteri">
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="1" />
+    <End Role="MusteriFirma" Type="Self.MusteriFirma" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Musteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="MusteriFirma">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Telefon_Musteri">
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="1" />
+    <End Role="Telefon" Type="Self.Telefon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="Telefon">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BireyUnvan">
+    <End Role="BireyselUnvan" Type="Self.BireyselUnvan" Multiplicity="*" />
+    <End Role="MusteriBireysel" Type="Self.MusteriBireysel" Multiplicity="*" />
+  </Association>
+  <Association Name="FirmaFaaliyet">
+    <End Role="FaaliyetAlani" Type="Self.FaaliyetAlani" Multiplicity="*" />
+    <End Role="MusteriFirma" Type="Self.MusteriFirma" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="CRM1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Adres" EntityType="Self.Adre" />
+    <EntitySet Name="BireyselUnvans" EntityType="Self.BireyselUnvan" />
+    <EntitySet Name="Emails" EntityType="Self.Email" />
+    <EntitySet Name="FaaliyetAlanis" EntityType="Self.FaaliyetAlani" />
+    <EntitySet Name="Musteris" EntityType="Self.Musteri" />
+    <EntitySet Name="MusteriBireysels" EntityType="Self.MusteriBireysel" />
+    <EntitySet Name="MusteriFirmas" EntityType="Self.MusteriFirma" />
+    <EntitySet Name="MusteriTurus" EntityType="Self.MusteriTuru" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Telefons" EntityType="Self.Telefon" />
+    <AssociationSet Name="FK_Adres_Musteri" Association="Self.FK_Adres_Musteri">
+      <End Role="Musteri" EntitySet="Musteris" />
+      <End Role="Adres" EntitySet="Adres" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Email_Musteri" Association="Self.FK_Email_Musteri">
+      <End Role="Musteri" EntitySet="Musteris" />
+      <End Role="Email" EntitySet="Emails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Musteri_MusteriTuru" Association="Self.FK_Musteri_MusteriTuru">
+      <End Role="MusteriTuru" EntitySet="MusteriTurus" />
+      <End Role="Musteri" EntitySet="Musteris" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MusteriBireysel_Musteri" Association="Self.FK_MusteriBireysel_Musteri">
+      <End Role="Musteri" EntitySet="Musteris" />
+      <End Role="MusteriBireysel" EntitySet="MusteriBireysels" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MusteriFirma_Musteri" Association="Self.FK_MusteriFirma_Musteri">
+      <End Role="Musteri" EntitySet="Musteris" />
+      <End Role="MusteriFirma" EntitySet="MusteriFirmas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Telefon_Musteri" Association="Self.FK_Telefon_Musteri">
+      <End Role="Musteri" EntitySet="Musteris" />
+      <End Role="Telefon" EntitySet="Telefons" />
+    </AssociationSet>
+    <AssociationSet Name="BireyUnvan" Association="Self.BireyUnvan">
+      <End Role="BireyselUnvan" EntitySet="BireyselUnvans" />
+      <End Role="MusteriBireysel" EntitySet="MusteriBireysels" />
+    </AssociationSet>
+    <AssociationSet Name="FirmaFaaliyet" Association="Self.FirmaFaaliyet">
+      <End Role="FaaliyetAlani" EntitySet="FaaliyetAlanis" />
+      <End Role="MusteriFirma" EntitySet="MusteriFirmas" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(CRM1Model.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(CRM1Model.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

@@ -1,0 +1,5 @@
+C:\Users\Dilan\Desktop\CRM\CRM.DTO\bin\Debug\CRM.DTO.dll
+C:\Users\Dilan\Desktop\CRM\CRM.DTO\bin\Debug\CRM.DTO.pdb
+C:\Users\Dilan\Desktop\CRM\CRM.DTO\obj\Debug\CRM.DTO.csprojResolveAssemblyReference.cache
+C:\Users\Dilan\Desktop\CRM\CRM.DTO\obj\Debug\CRM.DTO.dll
+C:\Users\Dilan\Desktop\CRM\CRM.DTO\obj\Debug\CRM.DTO.pdb

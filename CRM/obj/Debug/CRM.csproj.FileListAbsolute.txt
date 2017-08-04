@@ -1,0 +1,194 @@
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\ApplicationInsights.config
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\csc.exe
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\System.Collections.Immutable.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\vbc.exe
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\VBCSCompiler.exe
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\VBCSCompiler.exe.config
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\CRM.dll.config
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\CRM.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\CRM.pdb
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.Web.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.WindowsServer.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.ApplicationInsights.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.Web.xml
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.WindowsServer.xml
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.ApplicationInsights.xml
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\obj\Debug\CRM.csprojResolveAssemblyReference.cache
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\obj\Debug\CRM.dll
+c:\users\dilan\documents\visual studio 2015\Projects\CRM\CRM\obj\Debug\CRM.pdb
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\ApplicationInsights.config
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\roslyn\csc.exe
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\roslyn\vbc.exe
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\CRM.dll.config
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\CRM.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\CRM.pdb
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\EntityFramework.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\EntityFramework.SqlServer.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\Microsoft.AI.Web.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\Microsoft.ApplicationInsights.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\EntityFramework.xml
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\EntityFramework.SqlServer.xml
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\Microsoft.AI.Web.xml
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\Microsoft.ApplicationInsights.xml
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\obj\Debug\CRM.csprojResolveAssemblyReference.cache
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\obj\Debug\CRM.dll
+C:\Users\nbuy_ogrenci\Documents\Visual Studio 2013\Projects\CRM\CRM\obj\Debug\CRM.pdb
+E:\DİLAN\CRM\CRM\bin\ApplicationInsights.config
+E:\DİLAN\CRM\CRM\bin\roslyn\csc.exe
+E:\DİLAN\CRM\CRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\DİLAN\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\DİLAN\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\DİLAN\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\DİLAN\CRM\CRM\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\DİLAN\CRM\CRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\DİLAN\CRM\CRM\bin\roslyn\System.Collections.Immutable.dll
+E:\DİLAN\CRM\CRM\bin\roslyn\System.Reflection.Metadata.dll
+E:\DİLAN\CRM\CRM\bin\roslyn\vbc.exe
+E:\DİLAN\CRM\CRM\bin\roslyn\VBCSCompiler.exe
+E:\DİLAN\CRM\CRM\bin\roslyn\VBCSCompiler.exe.config
+E:\DİLAN\CRM\CRM\bin\CRM.dll.config
+E:\DİLAN\CRM\CRM\bin\CRM.dll
+E:\DİLAN\CRM\CRM\bin\CRM.pdb
+E:\DİLAN\CRM\CRM\bin\EntityFramework.dll
+E:\DİLAN\CRM\CRM\bin\EntityFramework.SqlServer.dll
+E:\DİLAN\CRM\CRM\bin\Microsoft.AI.Agent.Intercept.dll
+E:\DİLAN\CRM\CRM\bin\Microsoft.AI.DependencyCollector.dll
+E:\DİLAN\CRM\CRM\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\DİLAN\CRM\CRM\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\DİLAN\CRM\CRM\bin\Microsoft.AI.Web.dll
+E:\DİLAN\CRM\CRM\bin\Microsoft.AI.WindowsServer.dll
+E:\DİLAN\CRM\CRM\bin\Microsoft.ApplicationInsights.dll
+E:\DİLAN\CRM\CRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\DİLAN\CRM\CRM\bin\EntityFramework.xml
+E:\DİLAN\CRM\CRM\bin\EntityFramework.SqlServer.xml
+E:\DİLAN\CRM\CRM\bin\Microsoft.AI.DependencyCollector.xml
+E:\DİLAN\CRM\CRM\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\DİLAN\CRM\CRM\bin\Microsoft.AI.Web.xml
+E:\DİLAN\CRM\CRM\bin\Microsoft.AI.WindowsServer.xml
+E:\DİLAN\CRM\CRM\bin\Microsoft.ApplicationInsights.xml
+E:\DİLAN\CRM\CRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\DİLAN\CRM\CRM\obj\Debug\CRM.csprojResolveAssemblyReference.cache
+E:\DİLAN\CRM\CRM\obj\Debug\CRM.dll
+E:\DİLAN\CRM\CRM\obj\Debug\CRM.pdb
+E:\DİLAN\CRM\CRM\bin\CRM.BLL.dll
+E:\DİLAN\CRM\CRM\bin\CRM.Entity.dll
+E:\DİLAN\CRM\CRM\bin\CRM.DAL.dll
+E:\DİLAN\CRM\CRM\bin\CRM.BLL.pdb
+E:\DİLAN\CRM\CRM\bin\CRM.Entity.pdb
+E:\DİLAN\CRM\CRM\bin\CRM.DAL.pdb
+E:\DİLAN\CRM\CRM\bin\AjaxControlToolkit.dll
+E:\DİLAN\CRM\CRM\bin\AjaxControlToolkit.pdb
+E:\DİLAN\CRM\CRM\bin\ar\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\cs\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\de\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\es\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\fr\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\he\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\hi\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\it\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\ja\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\ko\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\nl\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\pt\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\ru\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\tr-TR\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\zh-CHS\AjaxControlToolkit.resources.dll
+E:\DİLAN\CRM\CRM\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\ApplicationInsights.config
+C:\Users\Dilan\Desktop\CRM\CRM\bin\roslyn\csc.exe
+C:\Users\Dilan\Desktop\CRM\CRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Dilan\Desktop\CRM\CRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Dilan\Desktop\CRM\CRM\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\roslyn\vbc.exe
+C:\Users\Dilan\Desktop\CRM\CRM\bin\roslyn\VBCSCompiler.exe
+C:\Users\Dilan\Desktop\CRM\CRM\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Dilan\Desktop\CRM\CRM\bin\CRM.dll.config
+C:\Users\Dilan\Desktop\CRM\CRM\bin\CRM.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\CRM.pdb
+C:\Users\Dilan\Desktop\CRM\CRM\bin\AjaxControlToolkit.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\CRM.BLL.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\CRM.Entity.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\EntityFramework.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\EntityFramework.SqlServer.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\Microsoft.AI.Web.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\CRM.DAL.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\CRM.BLL.pdb
+C:\Users\Dilan\Desktop\CRM\CRM\bin\CRM.Entity.pdb
+C:\Users\Dilan\Desktop\CRM\CRM\bin\AjaxControlToolkit.pdb
+C:\Users\Dilan\Desktop\CRM\CRM\bin\EntityFramework.xml
+C:\Users\Dilan\Desktop\CRM\CRM\bin\EntityFramework.SqlServer.xml
+C:\Users\Dilan\Desktop\CRM\CRM\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Dilan\Desktop\CRM\CRM\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Dilan\Desktop\CRM\CRM\bin\Microsoft.AI.Web.xml
+C:\Users\Dilan\Desktop\CRM\CRM\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Dilan\Desktop\CRM\CRM\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Dilan\Desktop\CRM\CRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Dilan\Desktop\CRM\CRM\bin\CRM.DAL.pdb
+C:\Users\Dilan\Desktop\CRM\CRM\bin\ar\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\cs\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\de\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\es\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\fr\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\he\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\hi\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\it\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\ja\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\ko\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\nl\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\pt\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\ru\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\Dilan\Desktop\CRM\CRM\obj\Debug\CRM.csprojResolveAssemblyReference.cache
+C:\Users\Dilan\Desktop\CRM\CRM\obj\Debug\CRM.dll
+C:\Users\Dilan\Desktop\CRM\CRM\obj\Debug\CRM.pdb
+C:\Users\Dilan\Desktop\CRM\CRM\bin\CRM.Extension.dll
+C:\Users\Dilan\Desktop\CRM\CRM\bin\CRM.Extension.pdb

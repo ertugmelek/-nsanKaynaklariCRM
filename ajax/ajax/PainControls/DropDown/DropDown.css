@@ -1,0 +1,55 @@
+﻿.dropDownOutPutElement
+{
+	width:200px;
+	height:30px;
+    text-align: left;
+    border: solid 2px #889944;
+    background: url(<%=WebResource("PainControls.DropDown.menuOutPut.gif")%>); 
+    margin: 5px;
+    color: #666666;
+	padding: 2px 0 0 9px;
+}
+
+
+.dropDownListElement
+{
+ 
+	border:solid 1px black;
+}
+.dropDownOptionList
+{
+    margin: 0px;
+    padding: 0px;
+    cursor: default;
+    list-style-type: none;
+    text-align: left;
+    border: solid 1px ButtonShadow;
+    background-color: Window;
+    color: WindowText;
+    width:200px;
+ 
+}
+.listItemHighLight
+{
+	font-weight:bold;
+	color: #FFF;
+  	height: 32px;	
+	voice-family: "\"}\""; 
+  	voice-family: inherit;
+	text-decoration: none;
+	background:  url(<%=WebResource("PainControls.DropDown.menuLi.gif")%>) 0 -32px;
+	padding: 2px 0 0 35px;
+}
+.listItem
+{
+
+	color: #E4D6CD;
+
+	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	height: 30px;
+	text-decoration: none;
+	padding: 2px 0 0 35px;
+	background: url(<%=WebResource("PainControls.DropDown.menuLi.gif")%>); 
+	
+}

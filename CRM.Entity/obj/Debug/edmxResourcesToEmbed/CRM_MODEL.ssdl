@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CRM1Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Adres">
+    <Key>
+      <PropertyRef Name="AdresID" />
+    </Key>
+    <Property Name="AdresID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MusteriID" Type="int" Nullable="false" />
+    <Property Name="Adress" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Ilce" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Il" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BireyselUnvan">
+    <Key>
+      <PropertyRef Name="UnvanID" />
+    </Key>
+    <Property Name="UnvanID" Type="int" Nullable="false" />
+    <Property Name="Unvan" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BireyUnvan">
+    <Key>
+      <PropertyRef Name="UnvanID" />
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="UnvanID" Type="int" Nullable="false" />
+    <Property Name="MusteriID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Email">
+    <Key>
+      <PropertyRef Name="MailID" />
+    </Key>
+    <Property Name="MailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MusteriID" Type="int" Nullable="false" />
+    <Property Name="EmailAdres" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FaaliyetAlani">
+    <Key>
+      <PropertyRef Name="FaaliyetAlanID" />
+    </Key>
+    <Property Name="FaaliyetAlanID" Type="int" Nullable="false" />
+    <Property Name="FaaliyetAlani" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FirmaFaaliyet">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+      <PropertyRef Name="FaaliyetAlaniID" />
+    </Key>
+    <Property Name="MusteriID" Type="int" Nullable="false" />
+    <Property Name="FaaliyetAlaniID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Musteri">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="MusteriID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TipID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MusteriBireysel">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="Ad" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="Soyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TC" Type="char" MaxLength="11" Nullable="false" />
+    <Property Name="DogumTarihi" Type="date" Nullable="false" />
+    <Property Name="MusteriID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MusteriFirma">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="Mersis" Type="char" MaxLength="16" Nullable="false" />
+    <Property Name="Unvan" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MusteriID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MusteriTuru">
+    <Key>
+      <PropertyRef Name="TipID" />
+    </Key>
+    <Property Name="TipID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TipAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Telefon">
+    <Key>
+      <PropertyRef Name="TelefonID" />
+    </Key>
+    <Property Name="TelefonID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MusteriID" Type="int" Nullable="false" />
+    <Property Name="Telefon" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Adres_Musteri">
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="1" />
+    <End Role="Adres" Type="Self.Adres" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="Adres">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BireyUnvan_BireyselUnvan">
+    <End Role="BireyselUnvan" Type="Self.BireyselUnvan" Multiplicity="1" />
+    <End Role="BireyUnvan" Type="Self.BireyUnvan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BireyselUnvan">
+        <PropertyRef Name="UnvanID" />
+      </Principal>
+      <Dependent Role="BireyUnvan">
+        <PropertyRef Name="UnvanID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BireyUnvan_MusteriBireysel">
+    <End Role="MusteriBireysel" Type="Self.MusteriBireysel" Multiplicity="1" />
+    <End Role="BireyUnvan" Type="Self.BireyUnvan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MusteriBireysel">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="BireyUnvan">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Email_Musteri">
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="1" />
+    <End Role="Email" Type="Self.Email" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="Email">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FirmaFaaliyet_FaaliyetAlani">
+    <End Role="FaaliyetAlani" Type="Self.FaaliyetAlani" Multiplicity="1" />
+    <End Role="FirmaFaaliyet" Type="Self.FirmaFaaliyet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FaaliyetAlani">
+        <PropertyRef Name="FaaliyetAlanID" />
+      </Principal>
+      <Dependent Role="FirmaFaaliyet">
+        <PropertyRef Name="FaaliyetAlaniID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FirmaFaaliyet_MusteriFirma">
+    <End Role="MusteriFirma" Type="Self.MusteriFirma" Multiplicity="1" />
+    <End Role="FirmaFaaliyet" Type="Self.FirmaFaaliyet" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MusteriFirma">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="FirmaFaaliyet">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Musteri_MusteriTuru">
+    <End Role="MusteriTuru" Type="Self.MusteriTuru" Multiplicity="1" />
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MusteriTuru">
+        <PropertyRef Name="TipID" />
+      </Principal>
+      <Dependent Role="Musteri">
+        <PropertyRef Name="TipID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MusteriBireysel_Musteri">
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="1" />
+    <End Role="MusteriBireysel" Type="Self.MusteriBireysel" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Musteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="MusteriBireysel">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MusteriFirma_Musteri">
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="1" />
+    <End Role="MusteriFirma" Type="Self.MusteriFirma" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Musteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="MusteriFirma">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Telefon_Musteri">
+    <End Role="Musteri" Type="Self.Musteri" Multiplicity="1" />
+    <End Role="Telefon" Type="Self.Telefon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteri">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="Telefon">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="CRM1ModelStoreContainer">
+    <EntitySet Name="Adres" EntityType="Self.Adres" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BireyselUnvan" EntityType="Self.BireyselUnvan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BireyUnvan" EntityType="Self.BireyUnvan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Email" EntityType="Self.Email" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FaaliyetAlani" EntityType="Self.FaaliyetAlani" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FirmaFaaliyet" EntityType="Self.FirmaFaaliyet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Musteri" EntityType="Self.Musteri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MusteriBireysel" EntityType="Self.MusteriBireysel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MusteriFirma" EntityType="Self.MusteriFirma" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MusteriTuru" EntityType="Self.MusteriTuru" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Telefon" EntityType="Self.Telefon" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Adres_Musteri" Association="Self.FK_Adres_Musteri">
+      <End Role="Musteri" EntitySet="Musteri" />
+      <End Role="Adres" EntitySet="Adres" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BireyUnvan_BireyselUnvan" Association="Self.FK_BireyUnvan_BireyselUnvan">
+      <End Role="BireyselUnvan" EntitySet="BireyselUnvan" />
+      <End Role="BireyUnvan" EntitySet="BireyUnvan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BireyUnvan_MusteriBireysel" Association="Self.FK_BireyUnvan_MusteriBireysel">
+      <End Role="MusteriBireysel" EntitySet="MusteriBireysel" />
+      <End Role="BireyUnvan" EntitySet="BireyUnvan" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Email_Musteri" Association="Self.FK_Email_Musteri">
+      <End Role="Musteri" EntitySet="Musteri" />
+      <End Role="Email" EntitySet="Email" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FirmaFaaliyet_FaaliyetAlani" Association="Self.FK_FirmaFaaliyet_FaaliyetAlani">
+      <End Role="FaaliyetAlani" EntitySet="FaaliyetAlani" />
+      <End Role="FirmaFaaliyet" EntitySet="FirmaFaaliyet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FirmaFaaliyet_MusteriFirma" Association="Self.FK_FirmaFaaliyet_MusteriFirma">
+      <End Role="MusteriFirma" EntitySet="MusteriFirma" />
+      <End Role="FirmaFaaliyet" EntitySet="FirmaFaaliyet" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Musteri_MusteriTuru" Association="Self.FK_Musteri_MusteriTuru">
+      <End Role="MusteriTuru" EntitySet="MusteriTuru" />
+      <End Role="Musteri" EntitySet="Musteri" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MusteriBireysel_Musteri" Association="Self.FK_MusteriBireysel_Musteri">
+      <End Role="Musteri" EntitySet="Musteri" />
+      <End Role="MusteriBireysel" EntitySet="MusteriBireysel" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MusteriFirma_Musteri" Association="Self.FK_MusteriFirma_Musteri">
+      <End Role="Musteri" EntitySet="Musteri" />
+      <End Role="MusteriFirma" EntitySet="MusteriFirma" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Telefon_Musteri" Association="Self.FK_Telefon_Musteri">
+      <End Role="Musteri" EntitySet="Musteri" />
+      <End Role="Telefon" EntitySet="Telefon" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

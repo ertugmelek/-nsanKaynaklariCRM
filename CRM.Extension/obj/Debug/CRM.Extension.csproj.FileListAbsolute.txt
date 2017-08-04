@@ -1,0 +1,5 @@
+C:\Users\Dilan\Desktop\CRM\CRM.Extension\bin\Debug\CRM.Extension.dll
+C:\Users\Dilan\Desktop\CRM\CRM.Extension\bin\Debug\CRM.Extension.pdb
+C:\Users\Dilan\Desktop\CRM\CRM.Extension\obj\Debug\CRM.Extension.csprojResolveAssemblyReference.cache
+C:\Users\Dilan\Desktop\CRM\CRM.Extension\obj\Debug\CRM.Extension.dll
+C:\Users\Dilan\Desktop\CRM\CRM.Extension\obj\Debug\CRM.Extension.pdb
